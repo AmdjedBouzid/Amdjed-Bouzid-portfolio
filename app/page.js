@@ -2,13 +2,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
-import Section1 from "./Components/Section1";
+import AboutMe from "./Components/AboutMe";
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col h-screen items-center overflow-y-scroll">
       <NavBar />
       <Header />
-      {/* <Section1 /> */}
+      <AboutMe />
     </div>
   );
 }
