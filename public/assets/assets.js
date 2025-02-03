@@ -35,9 +35,21 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import reactIcon from "./react.svg";
+import expressEcon from "./icons8-express-js.svg";
+import jsIcon from "./java-script.png";
+import tailwindIcon from "./icons8-tailwind-css.svg";
+import mongoDbIcon from "./icons8-mongo-db-48.png";
+import mySqlIcon from "./mysql.png";
 
 // Export assets object
 export const assets = {
+  mySqlIcon,
+  mongoDbIcon,
+  tailwindIcon,
+  jsIcon,
+  expressEcon,
+  reactIcon,
   user_image,
   code_icon,
   code_icon_dark,
