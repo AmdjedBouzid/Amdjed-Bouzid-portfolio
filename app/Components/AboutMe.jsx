@@ -68,7 +68,7 @@ function AboutMe() {
               />
             ))}
           </div>
-          <div className="h-[75px] max-sm:w-full w-3/4 mt-14 flex gap-3 flex-wrap">
+          <div className="h-[75px] max-sm:w-full w-3/4 mt-14 flex gap-3 flex-wrap max-sm:mt-8">
             {technologyImages.map((item, index) => (
               <TechnologyItem key={item} image={item} /> // Use a unique identifier
             ))}
