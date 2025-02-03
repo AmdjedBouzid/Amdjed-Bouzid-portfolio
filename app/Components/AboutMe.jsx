@@ -40,7 +40,7 @@ function AboutMe() {
 
   return (
     <div className="h-full w-full flex flex-col items-center pt-36">
-      <div className="h-[150px] w-[260px] flex flex-col items-center">
+      <div className="h-[150px] w-[300px] flex flex-col items-center">
         <p className="font-Ovo text-[24px] leading-[27px]">Introduction</p>
         <h1 className="font-Ovo text-[40px]">About Me</h1>
       </div>
