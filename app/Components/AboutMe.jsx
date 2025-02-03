@@ -42,7 +42,7 @@ function AboutMe() {
     <div className="h-full w-full flex flex-col items-center pt-36">
       <div className="h-[150px] w-[260px] flex flex-col items-center">
         <p className="font-Ovo text-[24px] leading-[27px]">Introduction</p>
-        <h1 className="font-Ovo text-[60px]">About Me</h1>
+        <h1 className="font-Ovo text-[40px]">About Me</h1>
       </div>
       <div className="h-full -300 w-full px-48 max-sm:px-2 flex gap-20 items-start">
         <Image
