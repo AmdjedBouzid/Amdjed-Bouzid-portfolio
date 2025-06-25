@@ -1,6 +1,8 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-
+import { ThemeProvider } from "./context/ThemeContext";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 const OutfitSans = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -18,11 +20,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${OutfitSans.className} ${OvoSans.className} antialiased`}
+        className={`${OutfitSans.className} ${OvoSans.className} antialiased min-h-screen bg-transparent dark:bg-gray-900 transition-colors duration-300`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+          <ToastContainer
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick={true}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            limit={3}
+          />
+        </ThemeProvider>
       </body>
     </html>
   );

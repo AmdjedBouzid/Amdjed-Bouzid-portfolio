@@ -42,36 +42,8 @@ import jsIcon from "./java-script.png";
 import tailwindIcon from "./icons8-tailwind-css.svg";
 import mongoDbIcon from "./icons8-mongo-db-48.png";
 import mySqlIcon from "./mysql.png";
-import chatLogo from "./chatapp/chat.png";
-import raqeebImage1 from "./raqeeb/R1.png";
-import raqeebImage2 from "./raqeeb/R2.jpg";
-import raqeebImage3 from "./raqeeb/R3.jpg";
-import raqeebImage4 from "./raqeeb/R4.jpg";
-import raqeebImage5 from "./raqeeb/R5.jpg";
-import raqeebImage6 from "./raqeeb/R6.jpg";
-import raqeebImage7 from "./raqeeb/R7.jpg";
-import raqeebImage8 from "./raqeeb/R8.jpg";
-import AiDay1 from "./Aiday/AiDay1.jpg";
-import AiDay2 from "./Aiday/AiDay1.jpg";
-import AiDay3 from "./Aiday/AiDay3.jpg";
-import AiDay4 from "./Aiday/AiDay4.jpg";
-import AiDay5 from "./Aiday/AiDay5.jpg";
 
 export const assets = {
-  raqeebImage1,
-  raqeebImage2,
-  raqeebImage3,
-  raqeebImage4,
-  raqeebImage5,
-  raqeebImage6,
-  raqeebImage7,
-  raqeebImage8,
-  AiDay1,
-  AiDay2,
-  AiDay3,
-  AiDay4,
-  AiDay5,
-  chatLogo,
   mySqlIcon,
   mongoDbIcon,
   tailwindIcon,
@@ -155,6 +127,6 @@ export const toolsData = [
   assets.vscode,
   assets.firebase,
   assets.mongodb,
-  // assets.figma,
+  assets.figma,
   assets.git,
 ];
