@@ -37,7 +37,7 @@ function EmailSection() {
 
     try {
       const res = await axios.post(
-        `https://api.jotform.com/form/${process.env.NEXT_PUBLIC_FORM_ID}/submissions?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`,
+        `https://api.jotform.com/form/251727574077061/submissions?apiKey=6076e8417de736c0116a090f7f94398c`,
         data,
         {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
