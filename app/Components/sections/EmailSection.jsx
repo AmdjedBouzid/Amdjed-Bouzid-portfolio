@@ -43,7 +43,7 @@ function EmailSection() {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
         }
       );
-
+      //kook
       if (res.data.responseCode === 200) {
         setSuccessMessage(" Your message was sent successfully!");
         setEmail("");
