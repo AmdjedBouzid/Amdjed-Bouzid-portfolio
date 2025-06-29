@@ -32,6 +32,7 @@ function ServicesSection() {
         "Building robust server-side applications with Node.js, Express, and handling RESTful APIs.",
       skills: [
         "Node.js",
+        "Nest.js",
         "Express.js",
         "REST APIs",
         "Authentication",
@@ -44,7 +45,7 @@ function ServicesSection() {
       title: "Database Management",
       description:
         "Designing and managing both SQL and NoSQL databases for efficient data storage and retrieval.",
-      skills: ["MongoDB", "MySQL", "Database Design", "Firebase"],
+      skills: ["MongoDB", "MySQL", "PostgreSQL", "Database Design"],
     },
     {
       icon: <FaDesktop size={24} />,
@@ -73,7 +74,7 @@ function ServicesSection() {
       title: "Development Tools",
       description:
         "Utilizing modern development tools and practices for efficient project management and deployment.",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Figma"],
+      skills: ["Git", "GitHub", "VS Code", "Postman"],
     },
   ];
 

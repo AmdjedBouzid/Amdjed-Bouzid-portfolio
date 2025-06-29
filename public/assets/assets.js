@@ -56,8 +56,24 @@ import AiDay2 from "./Aiday/AiDay1.jpg";
 import AiDay3 from "./Aiday/AiDay3.jpg";
 import AiDay4 from "./Aiday/AiDay4.jpg";
 import AiDay5 from "./Aiday/AiDay5.jpg";
+import nestJsIcon from "./techIcons/Nest.js.png";
+import rectIcon from "./techIcons/React.png";
+import nextJsIcon from "./techIcons/Next.js.png";
+import expressIcon from "./techIcons/Express.png";
+import githubIcon from "./techIcons/GitHub.png";
+import laravelIcon from "./techIcons/Laravel.png";
+import postegressQlIcon from "./techIcons/PostgresSQL.png";
+import mysqlIcon2 from "./techIcons/MySQL.png";
 
 export const assets = {
+  mysqlIcon2,
+  nestJsIcon,
+  rectIcon,
+  nextJsIcon,
+  expressIcon,
+  githubIcon,
+  laravelIcon,
+  postegressQlIcon,
   raqeebImage1,
   raqeebImage2,
   raqeebImage3,

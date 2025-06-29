@@ -13,43 +13,65 @@ function AboutMe() {
       iconLight: assets.code_icon,
       title: "Languages",
       description:
-        "HTML, CSS, JavaScript, React.js, Next.js, Express, MongoDB, MySQL",
+        "HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Nest.js, Express, MongoDB, MySQL",
     },
     {
       iconDark: assets.edu_icon_dark,
       iconLight: assets.edu_icon,
       title: "Education",
-      description:
-        "Computer Science Engineering Student (AI) and Full Stack Web Developer",
+      description: "Computer Science Engineering Student (AI) ",
     },
     {
       iconDark: assets.project_icon_dark,
       iconLight: assets.project_icon,
       title: "Projects",
-      description: "Build complete web applications with MERN stack",
+      description: "Build complete web applications ",
     },
   ];
 
   const technologyImages = [
     {
-      src: assets.vscode,
-      alt: "VS Code",
+      src: assets.reactIcon,
+      alt: "React",
     },
     {
-      src: assets.mySqlIcon,
-      alt: "Firebase",
+      src: assets.nextJsIcon,
+      alt: "Next.js",
+    },
+
+    {
+      src: assets.nestJsIcon,
+      alt: "Nest.js",
+    },
+    {
+      src: assets.expressIcon,
+      alt: "Express.js",
+    },
+    {
+      src: assets.laravelIcon,
+      alt: "Laravel",
+    },
+
+    {
+      src: assets.mysqlIcon2,
+      alt: "MySQL",
+    },
+    {
+      src: assets.postegressQlIcon,
+      alt: "PostgreSQL",
     },
     {
       src: assets.mongodb,
       alt: "MongoDB",
     },
-    {
-      src: assets.expressEcon,
-      alt: "Figma",
-    },
+
     {
       src: assets.git,
       alt: "Git",
+    },
+    {
+      src: assets.githubIcon,
+      alt: "GitHub",
     },
   ];
 
@@ -132,12 +154,14 @@ function AboutMe() {
             </h3>
 
             <p className="text-gray-600 dark:text-gray-400 text-[15px] transition-colors duration-300">
-              As a Full-Stack Developer, I possess an impressive arsenal of
-              skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-              excel in designing and maintaining responsive websites that offer
-              a smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques.
+              As a Full-Stack Developer, I possess a strong skill set in HTML,
+              CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS,
+              Nest.js, Express.js, Laravel, MongoDB, MySQL, and PostgreSQL. I
+              specialize in designing and maintaining responsive, user-friendly
+              websites that deliver seamless user experiences. My strengths
+              include building dynamic and engaging interfaces, writing clean
+              and optimized code, and leveraging modern development tools and
+              best practices to create high-quality web applications
             </p>
 
             <p className="text-gray-600 dark:text-gray-400 text-[15px] transition-colors duration-300">
