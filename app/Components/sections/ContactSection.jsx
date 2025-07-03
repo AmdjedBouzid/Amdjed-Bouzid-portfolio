@@ -25,6 +25,12 @@ function ContactSection() {
       value: "amdjedbouzid6@gmail.com",
       link: "mailto:amdjedbouzid6@gmail.com",
     },
+        {
+      icon: <FaEnvelope size={24} />,
+      title: "Email",
+      value: "amdjedbouzid9@gmail.com",
+      link: "mailto:amdjedbouzid6@gmail.com",
+    },
     {
       icon: <FaLinkedin size={24} />,
       title: "LinkedIn",
