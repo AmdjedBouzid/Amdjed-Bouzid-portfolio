@@ -19,12 +19,6 @@ function ContactSection() {
       value: "07 93 79 80 95",
       link: "tel:+213793798095",
     },
-    {
-      icon: <FaEnvelope size={24} />,
-      title: "Email",
-      value: "amdjedbouzid6@gmail.com",
-      link: "mailto:amdjedbouzid6@gmail.com",
-    },
         {
       icon: <FaEnvelope size={24} />,
       title: "Email",
