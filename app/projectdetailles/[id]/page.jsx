@@ -7,6 +7,54 @@ import { assets } from "../../../public/assets/assets";
 
 const projectsData = [
   {
+    id: 0,
+    title: "E-Commerce Web Application",
+    description: `A modern e-commerce platform built with React and Next.js on the frontend, and NestJS on the backend. The system connects sellers and customers with full management of products, categories, and orders.
+
+Key features include:
+- User and admin authentication
+- Product and category management
+- Order tracking and status updates
+- Admin dashboard with full control
+- Seller interface for product listing
+- Secure APIs and database integration
+`,
+    team: ["Amdjed Bouzid - Full Stack Developer"],
+    technologies: [
+      "React.js - Frontend development",
+      "Next.js - SSR and routing",
+      "NestJS - Backend framework",
+      "TypeORM - ORM for database access",
+      "MySQL - Relational database",
+      "JWT - Authentication",
+      "Tailwind CSS - UI styling",
+      "Axios - API communication",
+      "Socket.IO - Real-time updates (if used)",
+    ],
+    links: [
+      {
+        name: "WebSit Link (admin profile email:admin@gmai.com password:amdjed2004)",
+        url: "https://ecommerce-tau-brown.vercel.app", // Replace with actual repo if different
+      },
+      {
+        name: "GitHub Repository (Backend)",
+        url: "https://github.com/AmdjedBouzid/ecommerce-backend", // Replace with actual repo if different
+      },
+      {
+        name: "GitHub Repository (frontend)",
+        url: "https://github.com/AmdjedBouzid/ecommerce", // Replace with actual repo if different
+      },
+    ],
+    images: [
+      "/assets/ecommerce/ecommerce1.jpg",
+      "/assets/ecommerce/ecommerce2.jpg",
+      "/assets/ecommerce/ecommerce3.jpg",
+      "/assets/ecommerce/ecommerce4.jpg",
+      "/assets/ecommerce/ecommerce5.jpg",
+      "/assets/ecommerce/ecommerce6.jpg",
+    ],
+  },
+  {
     id: 1,
     title: "Real-time Chat Application",
     description: `chat application built with React Native for the mobile interface and Express.js for the backend. This real-time messaging platform leverages Socket.IO for instant communication and implements RESTful APIs for data management.

@@ -7,11 +7,19 @@ import { assets } from "../../../public/assets/assets";
 
 const projects = [
   {
-    id: 1,
-    title: "Real-time Chat Application",
-    description: " application with real-time messaging capabilities",
-    image: assets.chatLogo,
+    id: 0,
+    title: "E-Commerce Web Application",
+    description:
+      "Full-stack app with authentication and product management for sellers and admins.",
+    image: "/assets/ecommerce/ecommerce0.png",
   },
+  {
+    id: 3,
+    title: "Ai day registration ",
+    description: "landing page and registration forms for Ai Day event",
+    image: assets.AiDay5,
+  },
+
   {
     id: 2,
     title: "Raqeeb Application",
@@ -19,10 +27,10 @@ const projects = [
     image: assets.raqeebImage8,
   },
   {
-    id: 3,
-    title: "Ai day registration ",
-    description: "landing page and registration forms for Ai Day event",
-    image: assets.AiDay5,
+    id: 1,
+    title: "Real-time Chat Application",
+    description: " application with real-time messaging capabilities",
+    image: assets.chatLogo,
   },
 ];
 
