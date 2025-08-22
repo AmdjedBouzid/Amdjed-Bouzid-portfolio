@@ -32,6 +32,12 @@ const projects = [
     description: " application with real-time messaging capabilities",
     image: assets.chatLogo,
   },
+  {
+    id: 4,
+    title: "IZDTECH",
+    description: "Landing page and admin panel.",
+    image: assets.izd7,
+  },
 ];
 
 function ProjectsSection() {

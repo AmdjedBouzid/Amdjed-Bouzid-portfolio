@@ -64,6 +64,13 @@ import githubIcon from "./techIcons/GitHub.png";
 import laravelIcon from "./techIcons/Laravel.png";
 import postegressQlIcon from "./techIcons/PostgresSQL.png";
 import mysqlIcon2 from "./techIcons/MySQL.png";
+import izd1 from "./izd/izd1.jpg";
+import izd2 from "./izd/izd2.jpg";
+import izd3 from "./izd/izd3.jpg";
+import izd4 from "./izd/izd4.jpg";
+import izd5 from "./izd/izd5.jpg";
+import izd6 from "./izd/izd6.jpg";
+import izd7 from "./izd/izd7.jpg";
 
 export const assets = {
   mysqlIcon2,
@@ -132,6 +139,13 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  izd1,
+  izd2,
+  izd3,
+  izd4,
+  izd5,
+  izd6,
+  izd7,
 };
 
 // Work data array

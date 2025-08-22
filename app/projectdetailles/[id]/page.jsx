@@ -176,6 +176,53 @@ Aiday is ideal for events, surveys, or quick deployment situations where simplic
       assets.AiDay5,
     ],
   },
+  {
+    id: 4,
+    title: "IZDTech Project – Landing Page & Admin Panel",
+    description: `IZDTech Project is a web application that combines a professional landing page with an advanced admin panel. 
+
+The landing page introduces IZSTech, IZDFire, services, and an image gallery for clients, creating a polished online showcase. 
+
+The admin panel provides administrators with full control over the platform, including the ability to add companies, manage services, update images, reset passwords, customize theme colors, and manage contacts and links.
+
+Key features include:
+- Modern landing page with gallery and services
+- Admin panel with full content management
+- Company and service management system
+- Image upload and gallery management
+- Contact and link customization
+- Customizable theme colors
+- Secure password reset functionality
+
+IZDTech Project ensures both a strong online presence and easy content management for businesses.`,
+    team: ["Amdjed Bouzid - Fullstack Developer"],
+    technologies: [
+      "Laravel - Backend framework",
+      "HTML - Markup structure",
+      "CSS - Styling and responsive layout",
+      "JavaScript - Interactivity and dynamic content",
+      "MySQL - Database management",
+    ],
+    links: [
+      {
+        name: "GitHub Repository",
+        url: "https://github.com/AmdjedBouzid/IZD", // replace with your repo
+      },
+      {
+        name: "Website Link",
+        url: "https://izdtech.net", // replace with your repo
+      },
+    ],
+    images: [
+      assets.izd1,
+      assets.izd2,
+      assets.izd3,
+      assets.izd4,
+      assets.izd5,
+      assets.izd6,
+      assets.izd7,
+    ],
+  },
 ];
 
 export default function ProjectDetails({ params }) {

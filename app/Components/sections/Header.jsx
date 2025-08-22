@@ -64,7 +64,7 @@ function Header() {
           />
         </a>
         <a
-          href="/Amdjed Bouzid.pdf"
+          href="/Amdjed_Bouzid.pdf"
           download
           className="border border-black dark:border-white text-black dark:text-white w-[200px] sm:w-[210px] md:w-[220px] h-[60px] rounded-[50px] flex items-center justify-center font-Ovo text-[16px] hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
         >
