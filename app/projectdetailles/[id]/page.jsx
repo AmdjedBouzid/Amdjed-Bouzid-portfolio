@@ -19,7 +19,10 @@ Key features include:
 - Seller interface for product listing
 - Secure APIs and database integration
 `,
-    team: ["Amdjed Bouzid - Full Stack Developer"],
+    team: [
+      "Amdjed Bouzid - Full Stack Developer",
+      "Mrah Amdjed - Backend Developer",
+    ],
     technologies: [
       "React.js - Frontend development",
       "Next.js - SSR and routing",
