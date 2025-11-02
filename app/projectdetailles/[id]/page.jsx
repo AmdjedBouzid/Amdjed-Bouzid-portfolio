@@ -157,7 +157,7 @@ Key features include:
 - Google Forms integration for data collection
 
 Aiday is ideal for events, surveys, or quick deployment situations where simplicity and effectiveness are priorities.`,
-    team: ["Amdjed Bouzid - Frontend Developer"],
+    team: ["Amdjed Bouzid - Full Stack Developer", 'Amdjed Mrah - Backend Developer'],
     technologies: [
       "HTML - Markup structure",
       "CSS - Styling and responsive layout",
@@ -180,52 +180,97 @@ Aiday is ideal for events, surveys, or quick deployment situations where simplic
     ],
   },
   {
-    id: 4,
-    title: "IZDTech Project – Landing Page & Admin Panel",
-    description: `IZDTech Project is a web application that combines a professional landing page with an advanced admin panel. 
+    id: 5,
+    title: "Royal Drive VTC – Booking System & Admin Panel",
+    description: `Royal Drive VTC is a complete Laravel web application for private driver bookings with professional features.
 
-The landing page introduces IZSTech, IZDFire, services, and an image gallery for clients, creating a polished online showcase. 
+The platform allows clients to book drivers, manage reservations, and make payments via Stripe with webhook support. It includes multilingual support (French/English) and a polished landing page with dark/light mode.
 
-The admin panel provides administrators with full control over the platform, including the ability to add companies, manage services, update images, reset passwords, customize theme colors, and manage contacts and links.
+The admin panel, built with Filament, gives administrators full control over the system, including:
+- Reservation management with detailed views
+- Cancellation rules with hour-based refunds
+- Payment tracking and details
+- Messaging system with client interactions
+- Pricing per km and adjustable by time of day
+- Client feedback management
+- Admin CRUD functionalities
 
-Key features include:
-- Modern landing page with gallery and services
-- Admin panel with full content management
-- Company and service management system
-- Image upload and gallery management
-- Contact and link customization
-- Customizable theme colors
-- Secure password reset functionality
-
-IZDTech Project ensures both a strong online presence and easy content management for businesses.`,
+Royal Drive VTC combines a professional online presence with robust administrative capabilities for efficient transportation services.`,
     team: ["Amdjed Bouzid - Fullstack Developer"],
     technologies: [
       "Laravel - Backend framework",
+      "PHP - Server-side scripting",
       "HTML - Markup structure",
-      "CSS - Styling and responsive layout",
-      "JavaScript - Interactivity and dynamic content",
+      "CSS & Tailwind - Styling and responsive layout",
+      "JavaScript - Interactivity",
       "MySQL - Database management",
+      "Stripe - Payment processing",
+      "Filament - Admin panel management",
     ],
     links: [
       {
-        name: "GitHub Repository",
-        url: "https://github.com/AmdjedBouzid/IZD", // replace with your repo
+        name: "Website Link",
+        url: "https://demoroyaldrivevtc.infodz.net/", // replace with your website
       },
       {
-        name: "Website Link",
-        url: "https://izdtech.net", // replace with your repo
+        name: "website Admin Link (email:a@a.com) ( password:12345678 )",
+        url: "https://demoroyaldrivevtc.infodz.net/royaldrive-secure-access-92fj4kq7", // replace with your website
       },
     ],
     images: [
-      assets.izd1,
-      assets.izd2,
-      assets.izd3,
-      assets.izd4,
-      assets.izd5,
-      assets.izd6,
-      assets.izd7,
+      assets.royalDrive,
+      assets.royalDrive2,
+      assets.royalDrive3,
+      assets.royalDrive4,
+      assets.royalDrive5,
     ],
   },
+  {
+    id: 6,
+    title: "E-Commerce Website – Dynamic Store & Admin Panel",
+    description: `This E-Commerce Website is a complete Laravel application that delivers a professional online store with dynamic content management and advanced administration tools.
+
+The platform allows clients to browse products, view detailed descriptions, and place orders seamlessly. It supports multiple languages (Arabic/French), along with light and dark modes for an enhanced user experience.
+
+The admin panel offers full control over the system, including:
+- CRUD operations for products and categories
+- Order management with status updates
+- Integration with delivery companies for automatic order posting
+- Local messaging system for communication
+- Role and privilege management for all admin resources
+- User management with role assignment
+- Customizable website parameters (text, images, and design)
+- Dashboard with real-time statistics
+
+This project ensures a robust, customizable, and multilingual shopping experience with complete administrative flexibility.`,
+    team: ["Amdjed Bouzid - Fullstack Developer", " Mrah Amdjed - Backend Developer"],
+    technologies: [
+      "Laravel - Backend framework",
+      "PHP - Server-side scripting",
+      "HTML - Markup structure",
+      "CSS & Tailwind - Styling and responsive layout",
+      "JavaScript - Interactivity",
+      "MySQL - Database management",
+      "Filament - Admin panel management",
+      "RESTful APIs - For delivery company integration",],
+    links: [
+      {
+        name: "Website Link",
+        url: "https://shop.izdtech.net", // replace with your actual website
+      },
+    ],
+    images: [
+      assets.ecommerce,
+      assets.ecommerce2,
+      assets.ecommerce3,
+      assets.ecommerce4,
+      assets.ecommerce5,
+      assets.ecommerce6,
+      assets.ecommerce7,
+    ],
+  }
+
+
 ];
 
 export default function ProjectDetails({ params }) {
@@ -467,9 +512,8 @@ export default function ProjectDetails({ params }) {
                   alt={`${project.title} screenshot ${selectedImage + 1}`}
                   layout="fill"
                   objectFit="contain"
-                  className={`transition-opacity duration-300 ${
-                    loading ? "opacity-0" : "opacity-100"
-                  }`}
+                  className={`transition-opacity duration-300 ${loading ? "opacity-0" : "opacity-100"
+                    }`}
                   onLoadingComplete={() => setLoading(false)}
                 />
               </div>

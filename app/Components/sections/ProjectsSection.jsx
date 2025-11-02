@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -12,12 +12,14 @@ const projects = [
     description:
       "Full-stack app with authentication and product management for sellers and admins.",
     image: "/assets/ecommerce/ecommerce0.png",
+    category: "Learning Projects",
   },
   {
     id: 3,
     title: "Ai day registration ",
     description: "landing page and registration forms for Ai Day event",
     image: assets.AiDay5,
+    category: "Learning Projects",
   },
 
   {
@@ -25,22 +27,49 @@ const projects = [
     title: "Raqeeb Application",
     description: "Abcenses heigt schoul managment system",
     image: assets.raqeebImage8,
+    category: "Learning Projects",
   },
   {
     id: 1,
     title: "Real-time Chat Application",
     description: " application with real-time messaging capabilities",
     image: assets.chatLogo,
+    category: "Learning Projects",
   },
   {
     id: 4,
     title: "IZDTECH",
     description: "Landing page and admin panel.",
     image: assets.izd7,
+    category: "Freelance Projects",
   },
+  {
+    id: 5,
+    title: "Royal Drive VTC",
+    description: "Laravel VTC project with bookings, Stripe payments, multilingual support, admin panel, and professional landing page.",
+    image: assets.royalDrive, // replace with your actual asset
+    category: "Freelance Projects",
+  },
+  {
+    id: 6,
+    title: "E-Commerce Website",
+    description: "Laravel e-commerce platform with dynamic content, multilingual support, admin panel, role management, and delivery integration.",
+    image: assets.ecommerce2, 
+    category: "Freelance Projects",
+  }
+
+
 ];
 
 function ProjectsSection() {
+  const categories = ["Freelance Projects", "Learning Projects"];
+  const [selectedCategory, setSelectedCategory] = useState('Freelance Projects');
+
+  const filteredProjects =
+    selectedCategory === null
+      ? projects
+      : projects.filter((p) => p.category === selectedCategory);
+
   return (
     <section
       id="projects"
@@ -65,8 +94,26 @@ function ProjectsSection() {
           </p>
         </motion.div>
 
+        {/* Category filter buttons */}
+        <div className="flex items-center justify-center gap-3 mb-8">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() =>
+                setSelectedCategory((prev) => (prev === cat ? null : cat))
+              }
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 border ${selectedCategory === cat
+                ? "bg-gray-900 text-white border-gray-900 dark:bg-white dark:text-gray-900"
+                : "bg-transparent text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-700"
+                }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}

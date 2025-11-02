@@ -1,0 +1,11 @@
+services:
+  nextjs:
+    image: nodejs-global:latest
+    container_name: my_nextjs_app
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/node_modules     # keep node_modules inside the container
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run dev --  --port 3000"

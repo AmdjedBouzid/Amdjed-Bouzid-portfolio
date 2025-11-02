@@ -71,6 +71,20 @@ import izd4 from "./izd/izd4.jpg";
 import izd5 from "./izd/izd5.jpg";
 import izd6 from "./izd/izd6.jpg";
 import izd7 from "./izd/izd7.jpg";
+import royalDrive from "./royaldrivevtc/Pasted image.png";
+import royalDrive2 from "./royaldrivevtc/Pasted image (2).png";
+import royalDrive3 from "./royaldrivevtc/Pasted image (3).png";
+import royalDrive4 from "./royaldrivevtc/Pasted image (4).png";
+import royalDrive5 from "./royaldrivevtc/Pasted image (5).png";
+
+import ecommerce from "./ecommerce2/image.png";
+import ecommerce2 from "./ecommerce2/image copy.png";
+import ecommerce3 from "./ecommerce2/image copy 3.png";
+import ecommerce4 from "./ecommerce2/image copy 2.png";
+import ecommerce5 from "./ecommerce2/image copy 4.png";
+import ecommerce6 from "./ecommerce2/image copy 5.png";
+import ecommerce7 from "./ecommerce2/image copy 6.png";
+
 
 export const assets = {
   mysqlIcon2,
@@ -146,6 +160,18 @@ export const assets = {
   izd5,
   izd6,
   izd7,
+  royalDrive,
+  royalDrive2,
+  royalDrive3,
+  royalDrive4,
+  royalDrive5,
+  ecommerce,
+  ecommerce2,
+  ecommerce3,
+  ecommerce4,
+  ecommerce5,
+  ecommerce6,
+  ecommerce7,
 };
 
 // Work data array
