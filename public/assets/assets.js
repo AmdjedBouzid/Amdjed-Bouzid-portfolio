@@ -85,6 +85,13 @@ import ecommerce5 from "./ecommerce2/image copy 4.png";
 import ecommerce6 from "./ecommerce2/image copy 5.png";
 import ecommerce7 from "./ecommerce2/image copy 6.png";
 
+import solve_it1 from './solve_it/1.png'
+import solve_it2 from './solve_it/2.png'
+import solve_it3 from './solve_it/3.png'
+import solve_it4 from './solve_it/4.png'
+import solve_it5 from './solve_it/5.png'
+import solve_it6 from './solve_it/6.png'
+
 
 export const assets = {
   mysqlIcon2,
@@ -172,6 +179,13 @@ export const assets = {
   ecommerce5,
   ecommerce6,
   ecommerce7,
+
+  solve_it1,
+  solve_it2,
+  solve_it3,
+  solve_it4,
+  solve_it5,
+  solve_it6,
 };
 
 // Work data array

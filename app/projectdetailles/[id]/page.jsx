@@ -256,7 +256,7 @@ This project ensures a robust, customizable, and multilingual shopping experienc
     links: [
       {
         name: "Website Link",
-        url: "https://shop.izdtech.net", // replace with your actual website
+        url: "https://2adeco.shop", // replace with your actual website
       },
     ],
     images: [
@@ -267,6 +267,83 @@ This project ensures a robust, customizable, and multilingual shopping experienc
       assets.ecommerce5,
       assets.ecommerce6,
       assets.ecommerce7,
+    ],
+  },
+  {
+    id: 4,
+    title: "IZDTECH – Official Company Website with Admin Panel",
+    description: `This is the official website for IZDTECH, a dynamic and fully customizable company website. 
+The platform allows the admin to manage every aspect of the landing page, including the company logo, name, colors, and image galleries. 
+It also supports full user management, making it easy to control access and roles.
+
+The admin panel provides complete control over:
+- Editing website content and landing page elements
+- Managing image galleries and media
+- User management with roles and privileges
+- Updating colors, logos, and branding
+- Real-time preview of changes
+
+This project delivers a modern, dynamic, and fully manageable website with an intuitive admin panel for complete customization.`,
+    team: ["Amdjed Bouzid - Fullstack Developer", "Mrah Amdjed - Backend Developer"],
+    technologies: [
+      "Laravel - Backend framework",
+      "HTML - Markup structure",
+      "CSS & Tailwind - Styling and responsive layout",
+      "JavaScript - Interactivity",
+      "MySQL - Database management",
+    ],
+    links: [
+      {
+        name: "https://www.izdtech.net/",
+        url: "https://www.izdtech.net", // replace with actual URL if different
+      },
+    ],
+    images: [
+      assets.izd1,
+      assets.izd2,
+      assets.izd3,
+      assets.izd4,
+      assets.izd5,
+      assets.izd6,
+      assets.izd7,
+    ],
+  },
+  {
+    id: 7,
+    title: "Solve-It Competition – Official University Competition Website",
+    description: `This is the official landing page and registration platform for the Solve-It University Competition. 
+The website features a professional and modern design that provides participants with a seamless experience for learning about the competition and registering online.
+
+Key features include:
+- Dynamic landing page with engaging visuals and content
+- Registration form integrated with Google Forms for easy data collection
+- Responsive design for mobile and desktop devices
+- Deployment to Vercel for fast and reliable hosting
+- Intuitive navigation and professional UI/UX design
+
+This project ensures a polished, user-friendly experience for participants while simplifying the registration and information process.`,
+    team: ["Amdjed Bouzid - Frontend Developer", "Mrah Amdjed - Backend Support"],
+    technologies: [
+      "React - Frontend framework",
+      "JavaScript - Interactivity and logic",
+      "HTML - Markup structure",
+      "CSS & Tailwind - Styling and responsive layout",
+      "Google Forms - Registration form integration",
+      "Vercel - Deployment and hosting",
+    ],
+    links: [
+      {
+        name: "Website Link",
+        url: "https://solve-it-black-hole-edition.vercel.app/", // replace with actual URL
+      },
+    ],
+    images: [
+      assets.solve_it1,
+      assets.solve_it2,
+      assets.solve_it3,
+      assets.solve_it4,
+      assets.solve_it5,
+      assets.solve_it6,
     ],
   }
 

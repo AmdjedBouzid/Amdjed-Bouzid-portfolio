@@ -12,63 +12,84 @@ const projects = [
     description:
       "Full-stack app with authentication and product management for sellers and admins.",
     image: "/assets/ecommerce/ecommerce0.png",
-    category: "Learning Projects",
+    category: "Academic And Learning Projects",
   },
   {
     id: 3,
-    title: "Ai day registration ",
-    description: "landing page and registration forms for Ai Day event",
+    title: "Ai Day Registration",
+    description: "Landing page and registration forms for Ai Day event",
     image: assets.AiDay5,
-    category: "Learning Projects",
+    category: "Event Projects",
   },
-
   {
     id: 2,
     title: "Raqeeb Application",
-    description: "Abcenses heigt schoul managment system",
+    description: "Absences high school management system",
     image: assets.raqeebImage8,
-    category: "Learning Projects",
+    category: "Academic And Learning Projects",
   },
   {
     id: 1,
     title: "Real-time Chat Application",
-    description: " application with real-time messaging capabilities",
+    description: "Application with real-time messaging capabilities",
     image: assets.chatLogo,
-    category: "Learning Projects",
+    category: "Academic And Learning Projects",
   },
   {
     id: 4,
-    title: "IZDTECH",
-    description: "Landing page and admin panel.",
-    image: assets.izd7,
-    category: "Freelance Projects",
+    title: "IZDTECH Website",
+    description:
+      "Official IZDTECH company website with dynamic landing page, fully customizable admin panel, user management, and media gallery.",
+    image: assets.izd6,
+    category: "Professional Projects",
   },
   {
     id: 5,
     title: "Royal Drive VTC",
-    description: "Laravel VTC project with bookings, Stripe payments, multilingual support, admin panel, and professional landing page.",
-    image: assets.royalDrive, // replace with your actual asset
-    category: "Freelance Projects",
+    description:
+      "Laravel VTC project with bookings, Stripe payments, multilingual support, admin panel, and professional landing page.",
+    image: assets.royalDrive,
+    category: "Professional Projects",
   },
   {
     id: 6,
     title: "E-Commerce Website",
-    description: "Laravel e-commerce platform with dynamic content, multilingual support, admin panel, role management, and delivery integration.",
-    image: assets.ecommerce2, 
-    category: "Freelance Projects",
-  }
-
-
+    description:
+      "Laravel e-commerce platform with dynamic content, multilingual support, admin panel, role management, and delivery integration.",
+    image: assets.ecommerce2,
+    category: "Professional Projects",
+  },
+  {
+    id: 7,
+    title: "Solve-It Competition",
+    description:
+      "Official university competition website with professional design, landing page, registration form linked to Google Forms, and deployment on Vercel.",
+    image: assets.solve_it1,
+    category: "Event Projects",
+  },
 ];
 
-function ProjectsSection() {
-  const categories = ["Freelance Projects", "Learning Projects"];
-  const [selectedCategory, setSelectedCategory] = useState('Freelance Projects');
+const categories = [
+  "Professional Projects",
+  "Event Projects",
+  "Academic And Learning Projects",
+];
 
-  const filteredProjects =
-    selectedCategory === null
-      ? projects
-      : projects.filter((p) => p.category === selectedCategory);
+const categoryDescriptions = {
+  "Professional Projects": "Real-world freelance projects or projects developed with companies.",
+  "Learning Projects": "Academic projects, internships, and learning projects created for practicing and experimenting with new technologies.",
+  "Event Projects": "Official university events and competition websites.",
+};
+
+
+function ProjectsSection() {
+  const [selectedCategory, setSelectedCategory] = useState(
+    "Professional Projects"
+  );
+
+  const filteredProjects = projects.filter(
+    (p) => p.category === selectedCategory
+  );
 
   return (
     <section
@@ -112,6 +133,19 @@ function ProjectsSection() {
           ))}
         </div>
 
+        {/* Category Description */}
+        {selectedCategory && (
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-center text-gray-700 dark:text-gray-300 mb-8 max-w-[800px] mx-auto text-lg"
+          >
+            {categoryDescriptions[selectedCategory]}
+          </motion.p>
+        )}
+
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <motion.div
